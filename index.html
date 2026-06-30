@@ -152,7 +152,7 @@ h2.section-title{font-size:clamp(1.8rem,4vw,2.8rem);font-weight:700;letter-spaci
 .gh-num{font-size:2rem;font-weight:700;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1}
 .gh-label{font-size:.8rem;color:var(--muted);margin-top:.4rem}
 .gh-icon{font-size:1.5rem;margin-bottom:.5rem}
-.gh-langs{margin-top:3rem}
+.gh-langs{width: 80%;max-width: 1000px;margin: 3rem auto;}
 .lang-row{display:flex;align-items:center;gap:1rem;margin-bottom:.75rem}
 .lang-name{width:100px;font-size:.85rem;color:var(--muted)}
 .lang-bar-wrap{flex:1;height:6px;border-radius:3px;background:rgba(255,255,255,.05);overflow:hidden}
@@ -574,37 +574,74 @@ footer p{font-size:.8rem;color:var(--faint)}
 
 <!-- GITHUB -->
 <section id="github">
+   <div class="container"></div>
+  <div class="gh-langs reveal" data-delay="2"
+       style="margin:3rem auto 0; max-width:1000px; width:90%;">
 
-    <!-- Language bars -->
-    <div class="gh-langs reveal" data-delay="2" style="margin:3rem auto 0; max-width:1000px; width:90%;"></div>
-      <p style="font-size:.8rem;font-weight:600;color:var(--faint);text-transform:uppercase;letter-spacing:.08em;margin-bottom:1.25rem">Top Languages</p>
-      <div class="lang-row">
-        <span class="lang-name">TypeScript</span>
-        <div class="lang-bar-wrap"><div class="lang-bar" style="width:0%;background:linear-gradient(90deg,#3b82f6,#6366f1)" data-target="72"></div></div>
-        <span class="lang-pct">72%</span>
+    <p style="font-size:.8rem;
+              font-weight:600;
+              color:var(--faint);
+              text-transform:uppercase;
+              letter-spacing:.08em;
+              margin-bottom:1.25rem">
+      Top Languages
+    </p>
+
+    <div class="lang-row">
+      <span class="lang-name">TypeScript</span>
+      <div class="lang-bar-wrap">
+        <div class="lang-bar"
+             style="width:0%;background:linear-gradient(90deg,#3b82f6,#6366f1)"
+             data-target="72"></div>
       </div>
-      <div class="lang-row">
-        <span class="lang-name">Python</span>
-        <div class="lang-bar-wrap"><div class="lang-bar" style="width:0%;background:linear-gradient(90deg,#a855f7,#ec4899)" data-target="48"></div></div>
-        <span class="lang-pct">48%</span>
-      </div>
-      <div class="lang-row">
-        <span class="lang-name">Dart</span>
-        <div class="lang-bar-wrap"><div class="lang-bar" style="width:0%;background:linear-gradient(90deg,#06b6d4,#3b82f6)" data-target="35"></div></div>
-        <span class="lang-pct">35%</span>
-      </div>
-      <div class="lang-row">
-        <span class="lang-name">JavaScript</span>
-        <div class="lang-bar-wrap"><div class="lang-bar" style="width:0%;background:linear-gradient(90deg,#f59e0b,#ef4444)" data-target="28"></div></div>
-        <span class="lang-pct">28%</span>
-      </div>
-      <div class="lang-row">
-        <span class="lang-name">Java</span>
-        <div class="lang-bar-wrap"><div class="lang-bar" style="width:0%;background:linear-gradient(90deg,#10b981,#06b6d4)" data-target="18"></div></div>
-        <span class="lang-pct">18%</span>
-      </div>
+      <span class="lang-pct">72%</span>
     </div>
 
+    <div class="lang-row">
+      <span class="lang-name">Python</span>
+      <div class="lang-bar-wrap">
+        <div class="lang-bar"
+             style="width:0%;background:linear-gradient(90deg,#a855f7,#ec4899)"
+             data-target="48"></div>
+      </div>
+      <span class="lang-pct">48%</span>
+    </div>
+
+    <div class="lang-row">
+      <span class="lang-name">Dart</span>
+      <div class="lang-bar-wrap">
+        <div class="lang-bar"
+             style="width:0%;background:linear-gradient(90deg,#06b6d4,#3b82f6)"
+             data-target="35"></div>
+      </div>
+      <span class="lang-pct">35%</span>
+    </div>
+
+    <div class="lang-row">
+      <span class="lang-name">JavaScript</span>
+      <div class="lang-bar-wrap">
+        <div class="lang-bar"
+             style="width:0%;background:linear-gradient(90deg,#f59e0b,#ef4444)"
+             data-target="28"></div>
+      </div>
+      <span class="lang-pct">28%</span>
+    </div>
+
+    <div class="lang-row">
+      <span class="lang-name">Java</span>
+      <div class="lang-bar-wrap">
+        <div class="lang-bar"
+             style="width:0%;background:linear-gradient(90deg,#10b981,#06b6d4)"
+             data-target="18"></div>
+      </div>
+      <span class="lang-pct">18%</span>
+    </div>
+
+  </div>
+
+</section>
+    </div>
+</section>
  
 <!-- ACHIEVEMENTS -->
 <section id="achievements" style="background:rgba(255,255,255,.01)">
